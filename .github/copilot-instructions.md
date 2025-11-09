@@ -191,7 +191,7 @@ You are working on **alsouri-tech-site-uk**, a personal technology portfolio and
 
 ## 🌟 Competitive Differentiation
 
-### Unique Value Propositions
+### Unique Value Proposition
 
 - **Full-Stack Expertise**: Business strategy + technical implementation
 - **AI Innovation**: Cutting-edge automation with personality-driven AI

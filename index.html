@@ -212,11 +212,12 @@
         /* Dark mode support for hero title */
         @media (prefers-color-scheme: dark) {
             .hero-title {
-                color: #4A9EFF; /* Brighter blue for dark mode */
-                background: linear-gradient(135deg, #4A9EFF 0%, #00F5D4 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+                /* Use solid color in dark mode for better visibility */
+                color: #4A9EFF !important;
+                background: none !important;
+                -webkit-background-clip: initial !important;
+                -webkit-text-fill-color: initial !important;
+                background-clip: initial !important;
             }
         }
 
