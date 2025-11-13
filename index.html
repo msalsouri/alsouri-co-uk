@@ -150,6 +150,66 @@
             box-shadow: var(--shadow-lg);
         }
 
+        /* Credibility Bar */
+        .credibility-bar {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-light);
+            padding: 1rem 0;
+            margin-top: 76px;
+        }
+
+        .credibility-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .credibility-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .badge-link {
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .badge-link:hover .badge-item {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .badge-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--bg-lighter);
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-medium);
+            transition: all 0.3s ease;
+        }
+
+        .badge-item i {
+            font-size: 1.25rem;
+        }
+
+        .badge-item img {
+            height: 24px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .badge-stripe {
+            background: linear-gradient(135deg, #635bff 0%, #00d4ff 100%);
+            color: white;
+        }
+
         /* Hero Section */
         .hero {
             padding: 8rem 0 4rem;
@@ -727,6 +787,44 @@
             <a href="#contact" class="cta-button">Get Started</a>
         </nav>
     </header>
+
+    <!-- Credibility Bar -->
+    <section class="credibility-bar">
+        <div class="credibility-container">
+            <div class="credibility-badges">
+                <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer" class="badge-link">
+                    <div class="badge-item">
+                        <img src="/assets/partners/microsoft-logo.png" alt="Microsoft Partner">
+                        <span>Microsoft Partner</span>
+                    </div>
+                </a>
+                <a href="https://www.lenovo.com/partners" target="_blank" rel="noopener noreferrer" class="badge-link">
+                    <div class="badge-item">
+                        <img src="/assets/partners/lenovo-logo.png" alt="Lenovo Partner">
+                        <span>Lenovo ISG & PSG Partner</span>
+                    </div>
+                </a>
+                <a href="#services" class="badge-link">
+                    <div class="badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Enterprise Solutions</span>
+                    </div>
+                </a>
+                <a href="#services" class="badge-link">
+                    <div class="badge-item">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>Global Reach</span>
+                    </div>
+                </a>
+                <a href="#services" class="badge-link">
+                    <div class="badge-item">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure & Compliant</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
