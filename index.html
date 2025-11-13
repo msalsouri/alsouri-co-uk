@@ -152,10 +152,11 @@
 
         /* Credibility Bar */
         .credibility-bar {
-            background: var(--bg-white);
-            border-bottom: 1px solid var(--border-light);
-            padding: 1rem 0;
+            background: linear-gradient(135deg, #1a237e 0%, #0052CC 50%, #00D4AA 100%);
+            border-bottom: none;
+            padding: 0.75rem 0;
             margin-top: 76px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .credibility-container {
@@ -181,7 +182,8 @@
 
         .badge-link:hover .badge-item {
             transform: translateY(-2px);
-            box-shadow: var(--shadow);
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         .badge-item {
@@ -189,11 +191,12 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem 0.875rem;
-            background: var(--bg-lighter);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
             border-radius: 50px;
             font-size: 0.8125rem;
             font-weight: 600;
-            color: var(--text-medium);
+            color: white;
             transition: all 0.3s ease;
             white-space: nowrap;
         }
@@ -203,14 +206,15 @@
         }
 
         .badge-item img {
-            height: 24px;
+            height: 20px;
             width: auto;
             object-fit: contain;
+            filter: brightness(0) invert(1);
         }
 
         .badge-stripe {
-            background: linear-gradient(135deg, #635bff 0%, #00d4ff 100%);
-            color: white;
+            background: rgba(255, 255, 255, 0.25);
+            border: 2px solid rgba(255, 255, 255, 0.5);
         }
 
         /* Hero Section */
